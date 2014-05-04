@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Contact | ghanshyam.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="style5.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="images/anim favicon.ico" type="image/x-icon">
+
+<script>
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+
+	"mp3": "audio/mpeg",
+
+	"mp4": "audio/mp4",
+
+	"ogg": "audio/ogg",
+
+	"wav": "audio/wav"
+
+}
+
+
+
+function createsoundbite(sound){
+
+	var html5audio=document.createElement('audio')
+
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+
+		for (var i=0; i<arguments.length; i++){
+
+			var sourceel=document.createElement('source')
+
+			sourceel.setAttribute('src', arguments[i])
+
+			if (arguments[i].match(/\.(\w+)$/i))
+
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+
+			html5audio.appendChild(sourceel)
+
+		}
+
+		html5audio.load()
+
+		html5audio.playclip=function(){
+
+			html5audio.pause()
+
+			html5audio.currentTime=0
+
+			html5audio.play()
+
+		}
+
+		return html5audio
+
+	}
+
+	else{
+
+		return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+
+	}
+
+}
+
+
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("sound/mouseover.ogg", "sound/mouseover.mp3","sound/mouseover.wav")
+var clicksound=createsoundbite("sound/click.ogg", "sound/click.mp3","sound/click.wav")
+
+</script>
+
+
+</head>
+<body>
+
+<div id="headerBar"></div>
+
+<div id="header">
+<span id="menu">
+	<ul id="nav">			
+		<li class="active"><a href="contact.htm" onclick="clicksound.playclip()">Contact Me</a></li>
+		<li><a href="photo.htm" onclick="clicksound.playclip()">Photo</a></li>
+		<li><a href="portfolio.htm" onclick="clicksound.playclip()">Portfolio</a></li>
+		<li><a href="profile.htm" onclick="clicksound.playclip()">Profile</a></li>  
+		<li><a href="home.htm" onclick="clicksound.playclip()">Home</a></li>               
+	</ul>
+</span>	
+</div>
+
+
+<div id="Wrapper">	
+
+<div class="contact_form">
+
+<h1 class="LogoContact">Ghanshyam Gehlot</h1>
+<p id="TextContact">To contact me, please email<a id="LinkContact" href="#">ghanshyam287@gmail.com</a>
+or send a message using the form below.You can also 
+find me on <a id="LinkContact" href="#">Twitter</a>,<a id="LinkContact" href="#">Facebook</a>and<a id="LinkContact" href="#">Google+</a></p></br>
+<form action="MAILTO:ghanshyam287@gmail.com" method="post" enctype="text/plain">
+<table width="500px">
+<tr>
+  <p id="ttl">Your Name</p>
+  <input  type="text" name="first_name" maxlength="30" size="41">
+</tr>
+<tr>
+  <p id="ttl">Email</p>
+  <input  type="text" name="email" maxlength="30" size="41">
+</tr>
+<tr>
+  <p id="ttl">Mobile No.</p>
+  <input  type="text" name="telephone" maxlength="10" size="41">
+</tr>
+<tr>
+   <p id="ttl">Message</p>
+   <textarea  name="comments" maxlength="1000" cols="32" rows="6"></textarea>
+</tr>
+<tr>
+  <input type="submit" value="Submit">
+  <div class="clearbutton">  <a class="GlobalOrangeButton" href="#"><span>Send Message</span></a> </div> 
+</tr>
+</table>
+</form>
+</div>
+<span id="photo">
+<img src="images/photo.png" width="520" height="514"/>
+</span>
+<div id="slink">
+<span id="link">
+	<ul id="slink">			
+		<li><a href="photo.htm"><img src="images/twitter.png" class="fade"/></a></li>
+		<li><a href="portfolio.htm"><img src="images/gplus.png" class="fade"/></a></li> 
+		<li><a href="contact.htm"><img src="images/facebook.png" class="fade"/></a></li>		
+	</ul>
+</span>
+</div>
+
+</div>
+
+<div id="footerBar">
+<p id="footer"><a id="ft" href="#">About</a>  |  <a id="ft" href="#">Some More Links</a>  |  <a id="ft" href="#">Share On Facebook</a></p>
+</div>
+
+</body>
+</html>

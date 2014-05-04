@@ -1,0 +1,252 @@
+body
+{
+background-image:url('images/background.png');
+background-repeat:repeat;
+margin: 0;
+padding: 0;
+}
+
+#headerBar {
+    border-bottom: 1px solid #707070;
+    height: 65px;
+    background: #121212;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+#nav
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+
+#header ul li a {
+display: block;
+padding: 15px;
+font-size: 20px;
+text-align: center;
+font-family: kozuka Gothic Pr6N EL;
+text-transform: none;
+text-decoration: none;
+color: #eee;
+border-right: 1px solid #1d1d1d;
+}
+
+#Wrapper {
+    width: 1000px;
+    height: 550px;
+    margin-left: 100px;
+	margin-top: 70px;
+}
+
+span#menu
+{
+position:absolute;
+top:0px;
+right:5px;
+}
+
+
+
+
+li{
+float:right;
+display:inline;
+}
+
+#nav li.active a {
+color: #fff;
+background: #353535;
+}
+
+a:link,a:visited{
+display:block;
+width:120px;
+font-weight:regular;
+color:#00b4ff;
+background-color:#121212;
+text-align:center;
+padding:15px;
+text-decoration:none;
+text-transform:uppercase;
+}
+
+a:hover,a:active{
+background-color:#353535;
+color:#fff;
+}
+
+a#ft:link,a#ft:visited{
+width:50px;
+text-align:center;
+padding:15px;
+display:inline;
+font-weight:regular;
+color:#c4c4c4;
+text-decoration:none;
+}
+
+a#ft:hover,a#ft:active{
+color:#2cbdd8;
+background-color:transparent;
+}
+
+p#text{
+font-family:"kozuka Gothic Pr6N EL";
+font-size:15;
+color:#eee;
+}
+
+#footerBar {
+    border-top: 1px solid #707070;
+    height: 150px;
+    background: #121212;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 5
+}
+
+p#footer{
+font-family:"Calibri";
+margin-top: 2em;
+margin-bottom: 0em;
+font-size:14;
+color:#c4c4c4;
+text-align:center;
+}
+
+.LogoContact{
+background-image: url(images/LogoContact.png);
+width: 251px;
+height: 85px;
+text-indent: -9999px;
+margin: 0;
+}
+a#LinkContact:link,a#LinkContact:visited{
+font-family:"Arial Narrow";
+font-size:15;
+color:#06b09e;
+background-color:transparent;
+display:inline;
+text-transform:lowercase;
+}
+
+a#LinkContact:hover,a#LinkContact:active{
+text-decoration:underline;
+background-color:transparent;
+}
+#TextContact{
+font-family:"Arial Narrow";
+font-size:18;
+color:#c5c2c2;
+}
+.contact_form {
+    width: 370px;
+    height: 500px;
+    margin-left: 100px;
+	margin-top: 80px;
+}
+p#ttl{
+font-family:"Arial";
+font-size:14;
+color:#dbd9d9;
+}
+p#cmt{
+font-family:"Arial";
+font-size:14;
+color:#fcfba1;
+}
+
+/* GLOBAL ORANGE BUTTON *****************************/
+a.GlobalOrangeButton span {
+background: transparent url('images/button_left_black.png') no-repeat 0 0;
+display: block;
+line-height: 20px;
+padding: 7px 0 5px 18px;
+color: #fff;
+}
+
+a.GlobalOrangeButton {
+background: transparent url('images/button_right_black.png') no-repeat top right;
+display: block;
+float: left;
+height: 17px;
+margin-right: 6px;
+padding-right: 20px;
+padding-top: 0px;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+text-transform:none;
+}
+
+a.GlobalOrangeButton:hover span {
+background-position: 0 -34px; color: #fff;
+}
+
+a.GlobalOrangeButton:hover {
+background-position: right -34px;
+}
+
+span#photo
+{
+position:absolute;
+top:110px;
+right:120px;
+}
+span#link
+{
+position:absolute;
+top:580px;
+right:180px;
+padding:0px;
+}
+#slink ul li a {
+display: block;
+padding: 15px;
+text-align: center;
+background: transparent;
+}
+
+.fade {
+   opacity: 0.9;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+ 
+   .fade:hover {
+      opacity: 0.3;
+      }
+	  
+.logo{
+background-image: url(images/logo.png);
+width: 401px;
+height: 278px;
+text-indent: -9999px;
+margin: 110px 0 0 150px;
+}
+
+p#quote{
+    width: 700px;
+    height: 100px;
+    margin-left: 40px;
+	margin-top: 110px;
+text-decoration: none;
+color:#c3c3c3;
+font-family: Script MT Bold;
+font-size:40px;
+font-weight:bold;
+text-transform:none;
+}
+div#CV{
+	width: 900px;
+    height: 950px;
+    margin-left: 120px;
+	margin-top: 140px;
+}
