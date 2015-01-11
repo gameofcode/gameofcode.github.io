@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact | ghanshyam.com</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Web address of Ghanshyam Gehlot" />
+	<meta name="keywords" content="ghanshyam, gehlot, MANIT" />
+	<meta name="author" content="Ghanshyam Gehlot"/>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<header>
+			<div id="menubar">
+			<ul class="nav">
+				<li><a href="contact.html">Contact Me</a></li>
+				<li><a href="photo.html">Photo</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="index.html" style="border-left:1px solid #1d1d1d;">Home</a></li>
+			</ul>
+			</div>
+    </header>
+	<section>
+		<div id="contactform">
+			<h1 class="LogoContact">Ghanshyam Gehlot</h1>
+			<p id="TextContact">To contact me, please email<a id="LinkContact" href="#">ghanshyam287@gmail.com</a>
+				or send a message using the form below.You can also 
+				find me on <a id="LinkContact" href="#">Facebook</a>,<a id="LinkContact" href="#">LinkedIn</a>and<a id="LinkContact" href="#">Google+</a>.
+			</p>
+			<form action="MAILTO:ghanshyam287@gmail.com" method="post" enctype="text/plain">
+			<table width="500px">
+				<tr>
+					<p id="ttl">Your Name</p>
+					<input  type="text" name="first_name" maxlength="30" size="41" required="required"/>
+				</tr>
+				<tr>
+					<p id="ttl">Email</p>
+					<input  type="email" name="user_email" maxlength="30" size="41" required="required"/>
+				</tr>
+				<tr>
+					<p id="ttl">Mobile No.</p>
+					<input  type="text" name="telephone" maxlength="10" size="41" required="required"/>
+				</tr>
+				<tr>
+					<p id="ttl">Message</p>
+					<textarea  name="comments" maxlength="1000" cols="32" rows="6" required="required"></textarea>
+				</tr>
+				<tr>
+					<button type="submit" style="background:transparent" onclick="sendMail()"><div>  <a class="GlobalOrangeButton"  ><span>Send Message</span></a> </div></button>
+				</tr>
+			</table>
+			</form>
+		</div>
+		<div id="photo">
+		<div id="social">
+		<ul>			
+			<li><a href="https://www.facebook.com/ghanshyam.gehlot" target="_blank"><img src="images/facebook.png" class="fade"/></a></li>
+			<li><a href="https://plus.google.com/108846832527103242619/about" target="_blank"><img src="images/gplus.png" class="fade"/></a></li> 
+			<li><a href="https://twitter.com/ghnshym" target="_blank"><img src="images/twitter.png" class="fade"/></a></li>		
+		</ul>
+		</div>
+		</div>
+	</section>
+	<footer>
+		<p>&copy; 2013 Ghanshyam Gehlot</p>
+	</footer>
+</body>
+</html>

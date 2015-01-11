@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+* {
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+
+body{
+background-image: url('images/bg.png');
+background-repeat: repeat;
+height: 100%;
+width: 1349px;
+}
+
+header{
+height: 65px;
+width: 100%;
+background-color: #121212;
+border-bottom: 1px solid #707070;
+}
+
+section{
+min-height: 595px;
+width:1000px;
+margin-left:170px;
+margin-right:auto;
+}
+
+footer{
+height: 150px;
+width: 100%;
+background-color: #121212;
+border-top: 1px solid #707070;
+}
+
+/*header start*/
+header ul {
+list-style-type: none;
+width: 900px;
+height: 100%;
+margin-right: 2px;
+float:right;
+}
+
+ul, li {
+list-style: none;
+}
+
+header ul.nav a{
+display:block;
+text-decoration:none;
+color:#eee;
+line-height:65px;
+font-family:'kozuka Gothic Pr6N EL', sans-serif;
+font-size:20px;
+padding-left:30px;
+padding-right:30px;
+border-right:1px solid #1d1d1d;
+}
+
+header ul.nav a:hover, header ul.nav a:active{
+color:#fff;
+background-color:#353535; /*#f16726;*/
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+
+header ul.nav li{
+float:right;
+display:inline;
+}
+/*header end*/
+
+/*wrapper start*/
+#logo{
+margin-top:45px;
+margin-left:50px;
+float:left;
+height:550px;
+width:400px;
+background:url('images/logoCSEstu.png') no-repeat;
+border:0px solid #000;
+}
+
+#photo{
+margin-top:45px;
+float:right;
+height:550px;
+width:515px;
+background:url('images/photo12.png') no-repeat;
+border:0px solid #000;
+}
+
+#social{
+height:30px;
+width:100%;
+position:relative;
+top:500px;
+margin-left:20px;
+}
+#social ul li {
+display: inline;
+padding: 20px;
+}
+
+.fade {
+   opacity: 0.9;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+ 
+.fade:hover {
+opacity: 0.3;
+}
+/*wrapper end*/
+
+/*footer start*/
+footer p{
+color:#c4c4c4;
+font:14px 'calibri';
+padding:20px 20px 20px 50px;
+}
+/*footer end*/
+
+/*contact page*/
+#contactform{
+margin-top:45px;
+margin-left:30px;
+float:left;
+height:auto;
+width:370px;
+border:0px solid #000;
+}
+.LogoContact{
+background-image: url(images/contactlogo.png);
+width: 251px;
+height: 85px;
+text-indent: -9999px;
+margin: 0;
+}
+#TextContact{
+font-family:"Arial Narrow";
+font-size:18px;
+color:#c5c2c2;
+margin:18px auto 18px auto;
+}
+a#LinkContact:link,a#LinkContact:visited{
+font-family:"Arial Narrow";
+font-size:15px;
+color:#06b09e;
+background-color:transparent;
+display:inline;
+text-decoration:none;
+padding:15px;
+}
+
+a#LinkContact:hover,a#LinkContact:active{
+text-decoration:underline;
+background-color:transparent;
+}
+
+p#ttl{
+font-family:"Arial";
+font-size:14px;
+color:#dbd9d9;
+margin-top:10px;
+margin-bottom:10px;
+}
+p#cmt{
+font-family:"Arial";
+font-size:14px;
+color:#fcfba1;
+margin:2px;
+border:2px inset #f00;
+padding-top:1px;
+padding-bottom:1px;
+}
+
+/* GLOBAL ORANGE BUTTON *****************************/
+a.GlobalOrangeButton span {
+background: transparent url('images/button_left_black.png') no-repeat 0 0;
+display: block;
+line-height: 23px;
+padding: 7px 0 5px 18px;
+color: #fff;
+}
+a.GlobalOrangeButton {
+background: transparent url('images/button_right_black.png') no-repeat top right;
+display: block;
+float: left;
+height: 34px;
+margin-right: 6px;
+padding-right: 20px;
+padding-top: 0px;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+text-transform:none;
+}
+a.GlobalOrangeButton:hover span {
+background-position: 0 -34px; color: #fff; cursor:pointer;
+}
+a.GlobalOrangeButton:hover {
+background-position: right -34px;
+}
+a.GlobalOrangeButton:active span {
+color: rgb(255, 245, 0);
+}
+input, textarea{
+padding:1px 0px;
+border:2px inset;
+}
+
+::selection {
+background: #ffaa25;
+color: #000;
+text-shadow: none;
+}
